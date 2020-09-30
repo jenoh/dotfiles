@@ -19,7 +19,8 @@ branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-PS1='%{$fg[blue]%}%n %{$fg[white]%}%(3~|../%2~|%~)%{$fg[red]%}$(branch) %{$reset_color%}'
+#PS1='%{$fg[red]%}%n %{$fg[white]%}%(3~|../%2~|%~)%{$fg[red]%}$(branch) %{$reset_color%}'
+PS1="%{%F{red}%}%n%{%f%}@%{%F{blue}%}%m %{%F{yellow}%}%~ %{$%f%} "
 
 #--------------------#
 #    SETTINGS  # 
