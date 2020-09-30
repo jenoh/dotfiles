@@ -1,0 +1,9 @@
+
+# Colors
+colors:
+  # Default colours
+  primary:
+    background: '#000000'
+    foreground: '#ffffff'
+font:
+  size: 14
