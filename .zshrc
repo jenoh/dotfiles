@@ -20,7 +20,7 @@ branch() {
 }
 
 #PS1='%{$fg[red]%}%n %{$fg[white]%}%(3~|../%2~|%~)%{$fg[red]%}$(branch) %{$reset_color%}'
-PS1="%{%F{red}%}%n%{%f%}@%{%F{blue}%}%m %{%F{yellow}%}%~ %{$%f%} "
+PS1="%{%F{red}%}%n%{%f%}@%{%F{blue}%}%m %{%F{yellow}%}%~ %{%f%}$fg[red]%}$(branch)%{$reset_color%} "
 
 #--------------------#
 #    SETTINGS  # 
