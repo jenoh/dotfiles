@@ -19,8 +19,20 @@ branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-#PS1='%{$fg[red]%}%n %{$fg[white]%}%(3~|../%2~|%~)%{$fg[red]%}$(branch) %{$reset_color%}'
-PS1="%{%F{red}%}%n%{%f%}@%{%F{blue}%}%m %{%F{yellow}%}%~ %{%f%}$fg[red]%}$(branch)%{$reset_color%} "
+#PS1="%{%F{red}%}%n%{%f%}@%{%F{blue}%}%m %{%F{yellow}%}%~ %{%f%}$fg[red]%}$(branch)%{$reset_color%} "
+
+#--------------------#
+#    ALIAS          # 
+#--------------------#
+
+alias ll="exa -lgF --sort type --time-style iso"
+alias lla="exa -lagF --sort type --time-style iso"
+alias llag="exa -lagF --git --sort type --time-style iso"
+alias llat="exa -lagTF --sort type --time-style iso"
+alias ll1="exa -a1F --sort type"
+alias ll1t="exa -a1TF --sort type"
+
+alias cc="clear"
 
 #--------------------#
 #    SETTINGS  # 
