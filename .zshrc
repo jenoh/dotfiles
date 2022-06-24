@@ -2,12 +2,14 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # jEnv configuration
-export PATH="$HOME/.jenv/bin:$PATH"
+export PATH="$HOME/.jenv/bin:${HOME}/.cargo/bin:$PATH"
+
+export TERM=xterm-256color
 eval "$(jenv init -)"
 alias php='/usr/local/Cellar/php@7.4/7.4.27/bin/php'
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/jenoh/.oh-my-zsh"
-
+export VCPKG_ROOT="/Users/jenoh/vcpkg"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -103,3 +105,6 @@ alias dcache="docker system prune -a"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+bashcompinit
+source /Users/jenoh/vcpkg/scripts/vcpkg_completion.zsh
