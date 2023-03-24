@@ -22,5 +22,5 @@ truncation_length = 2
 format = " on 🍿 [$branch]($style) "
 
 [git_status]
-modified = "modified "
-staged = "staged"
+modified = "M"
+staged = '[++\($count\)](green)'
