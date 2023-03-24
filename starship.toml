@@ -2,4 +2,15 @@
 disabled = true
 
 [git_branch]
-symbol = '🍿 '
+format = " on 🍿 [$branch]($style) "
+
+[username]
+show_always = true
+style_user = "#eab2ff bold"
+style_root = "#9A348E bold"
+format = '[⌈$user⌉]($style) in '
+
+[directory]
+style = "#eab2ff bold"
+format = "[⌞$path⌝]($style)"
+truncation_length = 2
