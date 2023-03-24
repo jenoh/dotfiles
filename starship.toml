@@ -1,8 +1,11 @@
 [aws]
 disabled = true
 
-[git_branch]
-format = " on 🍿 [$branch]($style) "
+[time]
+disabled = false
+format = '[$time]($style) '
+time_format = '%T'
+utc_time_offset = '+1'
 
 [username]
 show_always = true
@@ -14,3 +17,6 @@ format = '[⌈$user⌉]($style) in '
 style = "#eab2ff bold"
 format = "[⌞$path⌝]($style)"
 truncation_length = 2
+
+[git_branch]
+format = " on 🍿 [$branch]($style) "
