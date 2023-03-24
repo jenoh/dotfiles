@@ -12,5 +12,3 @@ ln -i ~/dotfiles/.zshrc ~/.zshrc
 ```
 tmux source ~/.tmux.conf
 ```
-and `prefix` + `I`.
-
