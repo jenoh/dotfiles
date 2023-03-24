@@ -20,3 +20,7 @@ truncation_length = 2
 
 [git_branch]
 format = " on 🍿 [$branch]($style) "
+
+[git_status]
+modified = "modified "
+staged = "staged"
