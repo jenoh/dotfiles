@@ -1,4 +1,5 @@
 eval "$(starship init zsh)"
+plugins=(git ssh-agent)
 
 # Export
 export PATH="$HOME/.jenv/bin:${HOME}/.cargo/bin:$PATH"
