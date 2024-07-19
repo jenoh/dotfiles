@@ -29,3 +29,4 @@ alias get_idf='. $HOME/esp/esp-idf/export.sh'
 alias cdb='cd ~/work/billing-api'
 alias cca='cd ~/work/ccadmin'
 alias dto='cd ~/work/clevercloud-scala-dto'
+export PATH=$HOME/.local/bin:$PATH
