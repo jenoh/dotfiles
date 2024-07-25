@@ -18,7 +18,7 @@ set $term alacritty -e zsh -c "tmux"
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | wmenu | xargs swaymsg exec --
+set $menu wofi --show drun  -i | xargs swaymsg exec --
 
 ### Output configuration
 #
@@ -64,7 +64,7 @@ output HDMI-A-1 pos 2880 1240 res 3840x2160 scale 1
 # Config for inputs
 input type:keyboard {
     xkb_layout fr,fr
-    xkb_variant ,ergol
+    xkb_variant ergol,
     xkb_options "grp:alt_space_toggle"
 }
 
@@ -131,15 +131,11 @@ input type:touchpad {
 # Workspaces:
 #
     # Switch to workspace
-    bindsym $mod+1 workspace number 1
-    bindsym $mod+2 workspace number 2
-    bindsym $mod+3 workspace number 3
-    bindsym $mod+4 workspace number 4
-    bindsym $mod+5 workspace number 5
-    bindsym $mod+6 workspace number 6
-    bindsym $mod+7 workspace number 7
-    bindsym $mod+8 workspace number 8
-    bindsym $mod+9 workspace number 9
+    bindsym $mod+r workspace number 1
+    bindsym $mod+t workspace number 2
+    bindsym $mod+i workspace number 3
+    bindsym $mod+u workspace number 4
+    bindsym $mod+y workspace number 5
   #  bindsym $mod+1 workspace number 1
   #  bindsym $mod+2 workspace number 2
   #  bindsym $mod+3 workspace number 3
@@ -151,15 +147,11 @@ input type:touchpad {
   #  bindsym $mod+9 workspace number 9
   #  bindsym $mod+0 workspace number 10
     # Move focused container to workspace
-    bindsym $mod+Shift+1 move container to workspace number 1
-    bindsym $mod+Shift+2 move container to workspace number 2
-    bindsym $mod+Shift+3 move container to workspace number 3
-    bindsym $mod+Shift+4 move container to workspace number 4
-    bindsym $mod+Shift+5 move container to workspace number 5
-    bindsym $mod+Shift+6 move container to workspace number 6
-    bindsym $mod+Shift+7 move container to workspace number 7
-    bindsym $mod+Shift+8 move container to workspace number 8
-    bindsym $mod+Shift+9 move container to workspace number 9
+    bindsym $mod+Shift+r move container to workspace number 1
+    bindsym $mod+Shift+t move container to workspace number 2
+    bindsym $mod+Shift+i move container to workspace number 3
+    bindsym $mod+Shift+u move container to workspace number 4
+    bindsym $mod+Shift+y move container to workspace number 5
   #  bindsym $mod+Shift+1 move container to workspace number 1
   #  bindsym $mod+Shift+2 move container to workspace number 2
   #  bindsym $mod+Shift+3 move container to workspace number 3
@@ -251,7 +243,7 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+r mode "resize"
+#bindsym $mod+r mode "resize"
 
 #
 # Status Bar:

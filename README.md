@@ -11,6 +11,8 @@ ln -i ~/dotfiles/waybar/style.css ~/.config/waybar/style.css
 ln -i ~/dotfiles/sway/config ~/.config/sway/config
 ln -i ~/dotfiles/sway/config.d/zoom.us.conf ~/.config/sway/config.d
 ln -i ~/dotfiles/swaylock/config ~/.config/swaylock/config
+ln -i ~/dotfiles/wofi/config ~/.config/wofi/config
+ln -i ~/dotfiles/wofi/style.css ~/.config/wofi/style.css
 ```
 
 ## Tmux
