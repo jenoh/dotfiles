@@ -1,0 +1,13 @@
+include core
+output * bg /home/jenoh/Images/wp3.png fill
+
+output eDP-1 disable
+output DP-1 pos 1440 1077 res 2560x1440 scale 1 transform 270
+output HDMI-A-1 pos 2880 1240 res 3840x2160 scale 1
+
+workspace 1 output DP-1
+workspace 2 output HDMI-A-1
+workspace 3 output HDMI-A-1
+workspace 4 output HDMI-A-1
+workspace 5 output HDMI-A-1
+workspace 6 output HDMI-A-1
