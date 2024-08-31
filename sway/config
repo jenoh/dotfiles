@@ -1,5 +1,5 @@
 include core
-output * bg /home/jenoh/Images/billing_now.jpg fill
+output * bg /home/jenoh/Images/wall2.png fill
 
 output eDP-1 pos 6720 1440 res 2880x1800 scale 1
 

@@ -164,4 +164,6 @@ exec obsidian
 workspace 5
 exec $term
 
+default_border none
+default_floating_border none
 include /etc/sway/config.d/*
