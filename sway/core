@@ -161,7 +161,6 @@ exec webcord
 exec slack
 exec firefox
 exec obsidian
-workspace 5
 exec $term
 
 default_border none
