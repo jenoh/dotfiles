@@ -20,10 +20,14 @@
 }
 
 #text {
-	margin: 5px;
+	margin: 19px;
 	border: none; /* border around each individual item within the search results */
 	background-color: trans; /* background behind each individual item within the search results */
         color: ffffff;
+}
+
+#image { 
+	padding-left: 19px;
 }
 
 /* Remove the search icon */
