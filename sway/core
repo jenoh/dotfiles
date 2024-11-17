@@ -118,7 +118,7 @@ input type:touchpad {
     bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 
     assign "[class=Slack]" workspace 1
-    assign "[class=WebCord]" workspace 1
+    assign "[class=Vesktop]" workspace 1
     assign "[class=Spotify]" workspace 5
     assign "[class=obsidian]" workspace 1
     assign "[app_id=firefox]" workspace 2
@@ -156,8 +156,7 @@ bar {
     swaybar_command waybar
 }
 
-
-exec webcord
+exec Vesktop
 exec slack
 exec firefox
 exec obsidian

@@ -1,5 +1,5 @@
 include core
-output * bg /home/jenoh/Images/wp3.png fill
+output * bg /home/jenoh/Images/wall2.png fill
 
 output eDP-1 disable
 output DP-1 pos 6720 840 res 2560x1440 scale 1 transform 270
