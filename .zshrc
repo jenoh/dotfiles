@@ -4,10 +4,11 @@ export PATH="$HOME/.jenv/bin:${HOME}/.cargo/bin:$PATH"
 export VCPKG_ROOT="/Users/jenoh/vcpkg"
 export ZSH="$HOME/.oh-my-zsh"
 export PSQL_EDITOR=nvim
+export WEASYPRINT_BIN=/home/jenoh/.local/bin/weasyprint
 plugins=(
         direnv
         git
-#       ssh-agent
+       ssh-agent
   keychain
         sudo
         zsh-autosuggestions

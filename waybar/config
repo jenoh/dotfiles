@@ -6,7 +6,7 @@
     // Choose the order of the modules idle_inhibitor
     "modules-left": ["sway/workspaces", "sway/mode"],
     //"modules-center": ["custom/weather"],
-    "modules-right": ["cpu", "memory", "bluetooth", "pulseaudio", "sway/language", "network","clock","battery"], 
+    "modules-right": ["backlight", "cpu", "memory", "bluetooth", "pulseaudio", "sway/language", "network","clock","battery"], 
      // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
