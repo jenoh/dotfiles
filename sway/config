@@ -1,5 +1,5 @@
 include core
-output * bg /home/jenoh/Images/wall2.png fill
+output * bg /home/jenoh/Images/wall4.jpg fill
 
 output eDP-1 pos 6720 1440 res 2880x1800 scale 1
 output  HDMI-A-1  pos 6901 0 res 3840x2160 scale 1

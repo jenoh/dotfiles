@@ -5,7 +5,7 @@ set $down j
 set $up k
 set $right l
 
-set $term alacritty -e zsh -c "tmux"
+set $term alacrittysbc "tmux"
 
 set $menu wofi --show drun  -i | xargs swaymsg exec --
 

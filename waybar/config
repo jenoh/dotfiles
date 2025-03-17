@@ -6,7 +6,7 @@
     // Choose the order of the modules idle_inhibitor
     "modules-left": ["sway/workspaces", "sway/mode"],
     //"modules-center": ["custom/weather"],
-    "modules-right": ["backlight", "cpu", "memory", "bluetooth", "pulseaudio", "sway/language", "network","clock","battery"], 
+    "modules-right": ["backlight", "cpu", "memory", "bluetooth", "pulseaudio","network","clock","battery"], 
      // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -85,11 +85,11 @@
         "interval": 1
     },
     "cpu": {
-        "format": "{usage}%",
+        "format": "{usage}% cpu",
         "on-click": "termite -e gotop"
     },
     "memory": {
-        "format": "{}%",
+        "format": "{}% mem",
         "on-click": "termite -e gotop"
     },
     "temperature": {
@@ -101,7 +101,7 @@
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
+        "format": "{percent}% light",
         "format-icons": ["", ""]
     },
     "battery": {
@@ -143,21 +143,5 @@
             "default": ["", ""]
         },
         "on-click": "pavucontrol"
-    },
-    "custom/weather": {
-        "format": "{}",
-        //"max-length": 50,
-        //"escape": false,
-        //"exec": "sleep 10 && weather-simple thessaloniki", 
-        "exec": "weather-waybar.py thessaloniki",
-        "return-type": "json",
-        "interval": 3600,
-        "on-click": "termite -e weather thessaloniki",
-        "tooltip": true 
-    },
-
-    "sway/language": {
-        "format": "{}",
-        "max-length": 50
     }
 }
