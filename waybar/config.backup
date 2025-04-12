@@ -1,0 +1,163 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "height": 30,
+    //"width": 1350, // Waybar width
+    // Choose the order of the modules idle_inhibitor
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    //"modules-center": ["custom/weather"],
+    "modules-right": ["backlight", "cpu", "memory", "bluetooth", "pulseaudio", "sway/language", "network","clock","battery"], 
+     // Modules configuration
+    // "sway/workspaces": {
+    //     "disable-scroll": true,
+    //     "all-outputs": true,
+    //     "format": "{name}: {icon}",
+    //     "format-icons": {
+    //         "1": "",
+    //         "2": "",
+    //         "3": "",
+    //         "4": "",
+    //         "5": "",
+    //         "urgent": "",
+    //         "focused": "",
+    //         "default": ""
+    //     }
+    // },
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": []
+        },
+        "all-outputs": true,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "com",
+            "2": "web",
+            "3": "code",
+            "4": "term",
+            "5": "music",
+            "6": "other"
+        }
+    },
+    "bluetooth": {
+	"format": "{status}",
+	"format-connected": "{device_alias}",
+	"format-connected-battery": "{device_alias} {device_battery_percentage}%",
+	//"format-device-preference": [ "Bose QC Headphones" ],
+	"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+	"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+	"on-click": "blueman-manager"
+},
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    "sway/window": {
+        "format": "{}"
+        //"max-length": 100
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+       "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+    "tray": {
+        "icon-size": 14,
+        "spacing": 5
+    },
+    "clock": {
+        "tooltip-format": "{:%F  %H:%M:%S}",
+        "format": "{:%F  %H:%M:%S}",
+        "format-alt": "{:%F  %H:%M:%S}",
+        //"timezones": [ "Athens" ],
+        //"max-length": 200
+        "interval": 1
+    },
+    "cpu": {
+        "format": "{usage}%",
+        "on-click": "termite -e gotop"
+    },
+    "memory": {
+        "format": "{}%",
+        "on-click": "termite -e gotop"
+    },
+    "temperature": {
+        // "thermal-zone": 2,
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        // "format-critical": "{temperatureC}°C ",
+        "format": "{temperatureC}°C "
+    },
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", ""]
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}%",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        //"format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", "", "", "", "", "", "", ""]
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+    "network": {
+        // "interface": "wlp2s0", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%)",
+        //"format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+        "format-ethernet": "{ifname}",
+        "format-disconnected": "⚠ Disconnected",
+        "on-click": "termite --title wifi_term -e nmtui-connect",
+        "tooltip": false
+    },
+    "pulseaudio": {
+        "scroll-step": 1,
+        "format": "{volume}%",
+        "format-bluetooth": "{volume}%",
+        "format-muted":"muted ",
+        "format-icons": {
+            "headphones": "",
+            "handsfree": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "custom/weather": {
+        "format": "{}",
+        //"max-length": 50,
+        //"escape": false,
+        //"exec": "sleep 10 && weather-simple thessaloniki", 
+        "exec": "weather-waybar.py thessaloniki",
+        "return-type": "json",
+        "interval": 3600,
+        "on-click": "termite -e weather thessaloniki",
+        "tooltip": true 
+    },
+
+    "sway/language": {
+        "format": "{}",
+        "max-length": 50
+    }
+}

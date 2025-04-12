@@ -15,6 +15,7 @@ ln -i ~/dotfiles/swaylock/config ~/.config/swaylock/config
 ln -i ~/dotfiles/wofi/config ~/.config/wofi/config
 ln -i ~/dotfiles/wofi/style.css ~/.config/wofi/style.css
 ln -i ~/dotfiles/alacritty.toml ~/.config/alacritty.toml
+ln -i ~/dotfiles/dunst/dunstrc ~/.config/dunst/dunstrc
 ```
 
 ## Tmux

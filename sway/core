@@ -5,7 +5,7 @@ set $down j
 set $up k
 set $right l
 
-set $term alacrittysbc "tmux"
+set $term alacritty
 
 set $menu wofi --show drun  -i | xargs swaymsg exec --
 
@@ -24,7 +24,7 @@ input type:touchpad {
 ### Key bindings
 
     # Start a terminal
-    bindsym $mod+Return exec $term
+    bindsym $mod+Return exec $term -e 'tmux'
 
     # Kill focused window
     bindsym $mod+Shift+q kill
